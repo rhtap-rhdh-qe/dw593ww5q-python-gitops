@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: dw593ww5q-python-gitops
+  description: This is GitOps manifest for dw593ww5q-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=dw593ww5q-python
+    backstage.io/kubernetes-id: dw593ww5q-python 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: dw593ww5q-python   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:dw593ww5q-python

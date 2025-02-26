@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: dw593ww5q-python-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/dw593ww5q-python-gitops
